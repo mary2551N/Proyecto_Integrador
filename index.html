@@ -5,22 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar container">
             <picture class="navbar__logo">
                 <a href="./index.html "></a>
                 <img src="image/img/branding/logo_light_horizontal.svg" alt=" Isologotipo de la marca Funkoshop">
             </picture>
 
-            <h2>Nuevos ingresos</h2>
-            <p> Descubri el proximo Funko Pop de tu coleccion </p>
 
-            <ul>
-                <li class="navbar__items">
-                    <a class="navbar__links" href="./pages/Shop.html">Shop</a>
+            <ul class="navbar__menu">
+                <li class="navbar__items with__submenu">
+                    <a class="navbar__links with__icon" href="./pages/Shop.html">Shop<iconify-icon
+                            icon="ion:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__items">
+                            <a class="submenu__links" href="">Funkos</a>
+
+                        </li>
+                        <li class="submenu__items">
+                            <a class="submenu__links" href=""> Remeras</a>
+
+                        </li>
+                        <li class="submenu__items">
+                            <a class="submenu__links" href="">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="navbar__items">
                     <a class="navbar__links" href="./pages/Contact.html">Contact</a>
@@ -152,7 +165,7 @@
         </nav>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
